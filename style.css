@@ -1,0 +1,111 @@
+body {
+  margin: 0 auto;
+  max-width: 500px;
+  tab-size: 4;
+  font-family: arial, sans-serif;
+}
+
+.container {
+  padding: 10px 0px;
+}
+
+input[type="button"] {
+  margin: 10px 0px;
+  padding: .5em 1em;
+  font-size: 1rem;
+  border-radius: 3px;
+  color: #333;
+  border: solid 1px #dbdbdb;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #fff;
+}
+
+input[type="button"]:hover {
+  border-color: #b5b5b5;
+  background: rgba(0, 0, 0, .03);
+}
+
+#result {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.sum {
+  color: #aaa;
+  background-color: #333;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+td {
+  text-align: right;
+  font-size: 1.2em;
+}
+
+.table-number {
+  width: 40px;
+  border-width: 0px;
+  padding: 3px 5px;
+  text-align: right;
+  font-size: 1.2em;
+}
+
+.table-number:hover {
+  background-color: #ddd;
+}
+
+.puzzle-table td {
+  padding: 2px;
+}
+
+.selected {
+  color: #000;
+  background-color: #75ce75;
+  border-radius: 2px;
+}
+
+.unselected {
+  color: #bbb;
+}
+
+.unknown {
+  color: #000;
+}
+
+.solved {
+  background-color: #e2ffe2;
+}
+
+.note {
+  margin-top: 20px;
+}
+
+@keyframes changed {
+  0% { box-shadow: 0 0 15px rgb(17, 87, 0); }
+  50% { box-shadow: none; }
+  100% { box-shadow: 0 0 15px rgb(17, 87, 0); }
+}
+
+@-webkit-keyframes changed {
+  0% { box-shadow: 0 0 15px rgb(17, 87, 0); }
+  50% { box-shadow: 0 0 0; }
+  100% { box-shadow: 0 0 15px rgb(17, 87, 0); }
+}
+
+.changed {
+  font-weight: bold;
+  -webkit-animation: changed 2.0s linear infinite;
+  -moz-animation: changed 2.0s linear infinite;
+  -ms-animation: changed 2.0s linear infinite;
+  -o-animation: changed 2.0s linear infinite;
+  animation: changed 2.0s linear infinite;
+}
